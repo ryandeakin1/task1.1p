@@ -4,6 +4,15 @@ main {
   align-items: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > span {
+  padding: 5px;
+}
+
 img {
   padding: 10px;
   width: 200px;
