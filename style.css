@@ -8,3 +8,8 @@ img {
   padding: 10px;
   width: 200px;
 }
+
+footer {
+  border-top: 2px solid;
+  margin: 10px;
+}
