@@ -4,8 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      width: 100%;
+      margin: 0 auto;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, rgb(18, 52, 243), rgb(39, 223, 230));
+      background-repeat: no-repeat;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    th {
+      padding-inline: 5px;
+    }
+    td {
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid;
+    }
+  </style>
 </head>
 <body>
-  
+  <header>
+    <h1>Welcome to my Website</h1>
+    <p>Created by Ryan Comito</p>
+  </header>
+  <main>
+    <table style="display: flex; flex-direction: column; align-items: center; border-collapse: collapse;">
+      <caption>How many days are there in each year?</caption>
+      <tr>
+        <th>January</th>
+        <th>February</th>
+        <th>March</th>
+        <th>April</th>
+        <th>May</th>
+        <th>June</th>
+        <th>July</th>
+        <th>August</th>
+        <th>September</th>
+        <th>October</th>
+        <th>November</th>
+        <th>December</th>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>28</td>
+        <td>31</td>
+        <td>30</td>
+        <td>31</td>
+        <td>30</td>
+        <td>31</td>
+        <td>31</td>
+        <td>30</td>
+        <td>31</td>
+        <td>30</td>
+        <td>31</td>
+      </tr>
+    </table>
+    <img src="calendar.png" alt="Picture of a calendar">
+  </main>
+  <footer>
+    <h4>Thank you for checking out my website!</h4>
+    <p>This was apart of Task 1.1P for Introduction to Responsive Web Apps</p>
+  </footer>
 </body>
 </html>
