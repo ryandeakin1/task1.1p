@@ -9,7 +9,7 @@
     body {
       width: 100%;
       margin: 0 auto;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom right, rgb(18, 52, 243), rgb(39, 223, 230));
       background-repeat: no-repeat;
     }
@@ -18,6 +18,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 20px;
+      border-bottom: 1px solid black;
     }
     th {
       padding-inline: 5px;
@@ -36,6 +38,8 @@
     <p>Created by Ryan Comito</p>
   </header>
   <main>
+    <h4>Ever wonder how many days there are in each month?</h4>
+    <p>Wonder no more!</p>
     <table style="display: flex; flex-direction: column; align-items: center; border-collapse: collapse;">
       <caption>How many days are there in each year?</caption>
       <tr>
@@ -67,19 +71,31 @@
         <td>31</td>
       </tr>
     </table>
-    <img src="calendar.png" alt="Picture of a calendar">
+    <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/256/calendar-icon.png" alt="Picture of a calendar">
     <p>Click <a href="https://calendar.google.com/" target="_blank">this link</a> to go to an online calendar site to plan your activites!</p>
     <h3>Please submit the following form to tell us about your favourite activities!</h3>
     <form action="#">
       <span>
         <label for="first-name">First Name</label>
-        <input type="text" name="" id="first-name" placeholder="John">
+        <input type="text" id="first-name" placeholder="John">
       </span>
       <span>
         <label for="last-name">Last Name</label>
-        <input type="text" name="" id="last-name" placeholder="Smith">
+        <input type="text" id="last-name" placeholder="Smith">
       </span>
-      <button type="submit">Submit!</button>
+      <span>
+        <label for="date">Today's date*</label>
+        <input type="date" id="date" required>
+      </span>
+      <span>
+        <label for="fav-activity">What is your favourite activity during the week?</label>
+        <input type="text" id="fav-activity">
+      </span>
+      <span>
+        <input type="checkbox" id="">
+        <label for="">Please tick if your favourite month is December!</label>
+      </span>
+      <input type="submit" value="Submit" id="submit-button">
     </form>
   </main>
   <footer>
